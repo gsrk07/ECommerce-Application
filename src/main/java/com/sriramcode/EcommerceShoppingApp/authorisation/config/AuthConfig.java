@@ -2,9 +2,11 @@ package com.sriramcode.EcommerceShoppingApp.authorisation.config;
 
 import com.sriramcode.EcommerceShoppingApp.authorisation.jwt.AuthTokenFilter;
 import com.sriramcode.EcommerceShoppingApp.authorisation.jwt.JwtAuthEntryPoint;
+import com.sriramcode.EcommerceShoppingApp.authorisation.user.ShopUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
