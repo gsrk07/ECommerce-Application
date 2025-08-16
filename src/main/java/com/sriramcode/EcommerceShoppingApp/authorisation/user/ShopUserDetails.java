@@ -1,5 +1,6 @@
 package com.sriramcode.EcommerceShoppingApp.authorisation.user;
 
+import com.sriramcode.EcommerceShoppingApp.user.models.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

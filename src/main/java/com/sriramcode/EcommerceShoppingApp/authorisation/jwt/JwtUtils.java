@@ -1,5 +1,10 @@
 package com.sriramcode.EcommerceShoppingApp.authorisation.jwt;
 
+import com.sriramcode.EcommerceShoppingApp.authorisation.user.ShopUserDetails;
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import io.jsonwebtoken.security.SignatureException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

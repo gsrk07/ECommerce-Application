@@ -1,6 +1,7 @@
 package com.sriramcode.EcommerceShoppingApp.authorisation.user;
 
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
+import com.sriramcode.EcommerceShoppingApp.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
