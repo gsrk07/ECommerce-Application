@@ -1,11 +1,11 @@
 package com.sriramcode.EcommerceShoppingApp.user.service;
 
-
 import com.sriramcode.EcommerceShoppingApp.commons.exception.ResourceNotFoundException;
 import com.sriramcode.EcommerceShoppingApp.user.dto.CreateUserRequest;
 import com.sriramcode.EcommerceShoppingApp.user.dto.ResetPasswordRequestDto;
 import com.sriramcode.EcommerceShoppingApp.user.dto.UserDto;
 import com.sriramcode.EcommerceShoppingApp.user.dto.UserUpdateRequest;
+import com.sriramcode.EcommerceShoppingApp.user.exception.AlreadyExistException;
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
 import com.sriramcode.EcommerceShoppingApp.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

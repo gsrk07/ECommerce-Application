@@ -3,6 +3,7 @@ package com.sriramcode.EcommerceShoppingApp.user.models;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.Cart;
 import com.sriramcode.EcommerceShoppingApp.commons.models.BaseModel;
+import com.sriramcode.EcommerceShoppingApp.orders.models.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
