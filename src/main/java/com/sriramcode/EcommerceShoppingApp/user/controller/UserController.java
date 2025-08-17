@@ -2,12 +2,15 @@ package com.sriramcode.EcommerceShoppingApp.user.controller;
 
 import com.sriramcode.EcommerceShoppingApp.commons.dto.ApiResponse;
 import com.sriramcode.EcommerceShoppingApp.commons.exception.ResourceNotFoundException;
+import com.sriramcode.EcommerceShoppingApp.user.dto.CreateUserRequest;
+import com.sriramcode.EcommerceShoppingApp.user.dto.UserDto;
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.sriramcode.EcommerceShoppingApp.user.service.IUserService;
 
 import static org.springframework.http.HttpStatus.CONFLICT;
 import static org.springframework.http.HttpStatus.NOT_FOUND;

@@ -1,5 +1,9 @@
 package com.sriramcode.EcommerceShoppingApp.user.service;
 
+import com.sriramcode.EcommerceShoppingApp.user.dto.CreateUserRequest;
+import com.sriramcode.EcommerceShoppingApp.user.dto.ResetPasswordRequestDto;
+import com.sriramcode.EcommerceShoppingApp.user.dto.UserDto;
+import com.sriramcode.EcommerceShoppingApp.user.dto.UserUpdateRequest;
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
 
 public interface IUserService {
