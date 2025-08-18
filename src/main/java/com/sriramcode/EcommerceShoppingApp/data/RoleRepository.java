@@ -1,4 +1,4 @@
-package com.sriramcode.EcommerceShoppingApp.Data;
+package com.sriramcode.EcommerceShoppingApp.data;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package com.sriramcode.EcommerceShoppingApp.Data;
+package com.sriramcode.EcommerceShoppingApp.data;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
