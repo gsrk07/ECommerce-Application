@@ -27,7 +27,7 @@ public class User extends BaseModel {
     private String email;
     private String password;
 
-    @JsonManagedReference // Used to break the infinite recursion problem
+    @JsonManagedReference
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private Cart cart;
 
