@@ -1,5 +1,6 @@
 package com.sriramcode.EcommerceShoppingApp.orders.models;
 
+import com.sriramcode.EcommerceShoppingApp.products.models.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

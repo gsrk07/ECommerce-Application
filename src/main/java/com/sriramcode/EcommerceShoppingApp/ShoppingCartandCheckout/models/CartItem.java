@@ -2,6 +2,7 @@ package com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sriramcode.EcommerceShoppingApp.commons.models.BaseModel;
+import com.sriramcode.EcommerceShoppingApp.products.models.Product;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
