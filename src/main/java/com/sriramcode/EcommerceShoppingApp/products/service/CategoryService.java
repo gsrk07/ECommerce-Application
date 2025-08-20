@@ -1,5 +1,6 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.products.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

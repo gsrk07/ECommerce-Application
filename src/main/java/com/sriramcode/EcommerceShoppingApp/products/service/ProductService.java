@@ -3,6 +3,7 @@ package com.sriramcode.EcommerceShoppingApp.products.service;
 import com.sriramcode.EcommerceShoppingApp.products.models.Category;
 import com.sriramcode.EcommerceShoppingApp.products.models.Image;
 import com.sriramcode.EcommerceShoppingApp.products.models.Product;
+import com.sriramcode.EcommerceShoppingApp.products.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
