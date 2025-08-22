@@ -1,5 +1,6 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.products.models.Category;
 import com.sriramcode.EcommerceShoppingApp.products.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,6 @@ import java.util.Optional;
 
 public class CategoryService implements ICategoryService {
     private final CategoryRepository categoryRepository;
-
 
     @Override
     public Category getCategoryById(Long id) {
