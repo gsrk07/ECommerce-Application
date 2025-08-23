@@ -1,5 +1,10 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.commons.exception.ResourceNotFoundException;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ImageDto;
+import com.sriramcode.EcommerceShoppingApp.products.models.Image;
+import com.sriramcode.EcommerceShoppingApp.products.models.Product;
+import com.sriramcode.EcommerceShoppingApp.products.repository.ImageRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

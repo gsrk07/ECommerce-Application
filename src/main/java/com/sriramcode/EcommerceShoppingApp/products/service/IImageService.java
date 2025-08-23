@@ -1,5 +1,6 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.products.dto.ImageDto;
 import com.sriramcode.EcommerceShoppingApp.products.models.Image;
 import org.springframework.web.multipart.MultipartFile;
 
