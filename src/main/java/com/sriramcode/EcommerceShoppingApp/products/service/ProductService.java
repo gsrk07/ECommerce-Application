@@ -1,9 +1,17 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.products.dto.AddProductRequest;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ImageDto;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ProductDto;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ProductUpdateRequest;
+import com.sriramcode.EcommerceShoppingApp.products.exception.AlreadyExistsException;
+import com.sriramcode.EcommerceShoppingApp.products.exception.ResourceNotFoundException;
 import com.sriramcode.EcommerceShoppingApp.products.models.Category;
 import com.sriramcode.EcommerceShoppingApp.products.models.Image;
 import com.sriramcode.EcommerceShoppingApp.products.models.Product;
 import com.sriramcode.EcommerceShoppingApp.products.repository.CategoryRepository;
+import com.sriramcode.EcommerceShoppingApp.products.repository.ImageRepository;
+import com.sriramcode.EcommerceShoppingApp.products.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
