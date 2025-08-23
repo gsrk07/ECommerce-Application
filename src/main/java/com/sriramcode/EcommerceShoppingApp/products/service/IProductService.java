@@ -1,5 +1,8 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.products.dto.AddProductRequest;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ProductDto;
+import com.sriramcode.EcommerceShoppingApp.products.dto.ProductUpdateRequest;
 import com.sriramcode.EcommerceShoppingApp.products.models.Product;
 
 import java.util.List;

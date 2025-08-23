@@ -1,7 +1,9 @@
 package com.sriramcode.EcommerceShoppingApp.products.service;
 
+import com.sriramcode.EcommerceShoppingApp.commons.exception.ResourceNotFoundException;
 import com.sriramcode.EcommerceShoppingApp.products.models.Category;
 import com.sriramcode.EcommerceShoppingApp.products.repository.CategoryRepository;
+import com.sriramcode.EcommerceShoppingApp.user.exception.AlreadyExistException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
