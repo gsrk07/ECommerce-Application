@@ -47,7 +47,6 @@ public class CartService implements ICartService {
         return Optional.ofNullable(getCartByUserId(user.getId()))
                 .orElseGet(()->{
                     Cart cart = new Cart();
-                    // cart.setId(cartIdGenerator.incrementAndGet());
                     cart.setUser(user);
                     return cartRepository.save(cart);
                 });
