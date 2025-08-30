@@ -1,6 +1,7 @@
 package com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.service;
 
 import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.CartItem;
+import com.sriramcode.EcommerceShoppingApp.products.exception.ProductNotPresentException;
 
 public interface ICartItemService {
     void addCartItem(Long cartId, Long productId, int quantity) throws ProductNotPresentException;
