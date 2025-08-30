@@ -2,6 +2,9 @@ package com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.service;
 
 
 import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.Cart;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.repository.CartItemRepository;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.repository.CartRepository;
+import com.sriramcode.EcommerceShoppingApp.commons.exception.ResourceNotFoundException;
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
