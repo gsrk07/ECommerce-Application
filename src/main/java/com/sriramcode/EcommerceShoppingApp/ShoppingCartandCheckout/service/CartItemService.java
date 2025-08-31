@@ -23,11 +23,6 @@ public class CartItemService implements ICartItemService {
 
     @Override
     public void addCartItem(Long cartId, Long productId, int quantity) throws ProductNotPresentException {
-        // 1. Get the cart
-        // 2. Get the product
-        // 3. Check if the product already exists in the cart
-        // 4. If it exists, update the quantity
-        // 5. If it doesn't exist, add the product to the cart
         System.out.println("Adding item to cart " + productId + quantity);
         Cart cart = cartService.getCart(cartId);
         Product product = productService.getProductById(productId);
@@ -53,11 +48,6 @@ public class CartItemService implements ICartItemService {
 
     @Override
     public void removeCartItem(Long cartId, Long productId) throws ProductNotPresentException {
-        // 1. Get the cart
-        // 2. Get the product
-        // 3. Check if the product exists in the cart
-        // 4. If it exists, remove the product from the cart
-        // 5. If it doesn't exist, throw an exception
 
         Cart cart = cartService.getCart(cartId);
         Product product = productService.getProductById(productId);
@@ -69,11 +59,6 @@ public class CartItemService implements ICartItemService {
 
     @Override
     public void updateItemQuantity(Long cartId, Long productId, int quantity) throws ProductNotPresentException {
-        // 1. Get the cart
-        // 2. Get the product
-        // 3. Check if the product exists in the cart
-        // 4. If it exists, update the quantity
-        // 5. If it doesn't exist, throw an exception
 
         Cart cart = cartService.getCart(cartId);
         Product product = productService.getProductById(productId);
