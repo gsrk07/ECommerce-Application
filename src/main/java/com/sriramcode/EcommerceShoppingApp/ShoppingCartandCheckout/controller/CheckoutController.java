@@ -4,7 +4,6 @@ import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.dto.CheckoutI
 import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.dto.StripeResponseDto;
 import com.sriramcode.EcommerceShoppingApp.commons.dto.ApiResponse;
 import com.stripe.exception.StripeException;
-import com.stripe.service.CheckoutService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.service.CheckoutService;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class CheckoutController {
     @PostMapping("/create-session")
     public ResponseEntity<ApiResponse> createCheckoutSession(@RequestBody List<CheckoutItemRequestDto> checkoutItemDtoList) {
         try {
-            // Create a Stripe checkout session
+
             StripeResponseDto stripeResponse = checkoutService.createSession(checkoutItemDtoList);
             return ResponseEntity.ok(new ApiResponse("Checkout session created successfully.!", stripeResponse));
         } catch (StripeException stripeException) {

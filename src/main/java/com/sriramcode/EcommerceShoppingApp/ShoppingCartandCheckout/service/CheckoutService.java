@@ -1,5 +1,12 @@
 package com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.service;
 
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.dto.CheckoutItemRequestDto;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.dto.StripeResponseDto;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.PaymentDetails;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.repository.PaymentRepository;
+import com.sriramcode.EcommerceShoppingApp.orders.models.Order;
+import com.sriramcode.EcommerceShoppingApp.orders.models.OrderStatus;
+import com.sriramcode.EcommerceShoppingApp.orders.repository.OrderRepository;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.checkout.Session;
@@ -11,12 +18,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.PaymentStatus.SUCCESS;
+
 @RequiredArgsConstructor
 @Service
 public class CheckoutService implements ICheckoutService {
 
     private final PaymentRepository paymentRepository;
-    private final OrderRepository orderRepository; // Inject OrderRepository
+    private final OrderRepository orderRepository;
 
     @Value("${baseURL}")
     private String baseURL;
@@ -93,9 +102,6 @@ public class CheckoutService implements ICheckoutService {
                 .build();
     }
 
-    /**
-     * Update the status of an order if payment is successful.
-     */
     private void updateOrderStatus(Long orderId) {
         Order order = orderRepository.findById(orderId)
                 .orElseThrow(() -> new IllegalArgumentException("Order not found with ID: " + orderId));
