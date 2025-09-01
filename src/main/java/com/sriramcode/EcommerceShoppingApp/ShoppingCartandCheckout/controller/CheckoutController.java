@@ -33,7 +33,6 @@ public class CheckoutController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body(new ApiResponse("Stripe error: " + stripeException.getMessage(), null));
         } catch (Exception exception) {
-            // Handle unexpected errors
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(
                             new ApiResponse("An unexpected error occurred: " +  exception.getMessage(), null)
