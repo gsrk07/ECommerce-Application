@@ -1,6 +1,8 @@
 package com.sriramcode.EcommerceShoppingApp.user.dto;
 
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.dto.CartRequestDto;
 import lombok.Data;
+import org.springframework.data.domain.jaxb.SpringDataJaxb;
 
 import java.util.List;
 
@@ -10,6 +12,6 @@ public class UserDto {
     private String firstName;
     private String lastName;
     private String email;
-    private List<OrderDto> orders;
+    private List<SpringDataJaxb.OrderDto> orders;
     private CartRequestDto cart;
 }
