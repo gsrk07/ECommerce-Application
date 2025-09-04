@@ -1,5 +1,7 @@
 package com.sriramcode.EcommerceShoppingApp.orders.service;
 
+import com.sriramcode.EcommerceShoppingApp.orders.models.Order;
+
 import java.util.List;
 
 public interface IOrderService {
