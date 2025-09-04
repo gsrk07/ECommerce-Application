@@ -10,7 +10,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
 import java.util.Set;
+
 
 @Transactional
 @Component
@@ -33,7 +35,7 @@ public class DataInitializer implements ApplicationListener<ApplicationReadyEven
         Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
             Role role = new Role();
             role.setName("ROLE_USER");
-            return roleRepository.save(role); // Save the role to the database
+            return roleRepository.save(role);
         });
         for (int i = 1; i<=5; i++){
             String defaultEmail = "user"+i+"@email.com";
