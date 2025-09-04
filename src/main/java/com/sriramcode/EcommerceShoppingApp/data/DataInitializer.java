@@ -1,5 +1,8 @@
 package com.sriramcode.EcommerceShoppingApp.data;
 
+import com.sriramcode.EcommerceShoppingApp.user.models.Role;
+import com.sriramcode.EcommerceShoppingApp.user.models.User;
+import com.sriramcode.EcommerceShoppingApp.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
