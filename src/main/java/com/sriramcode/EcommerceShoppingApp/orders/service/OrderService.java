@@ -1,5 +1,11 @@
 package com.sriramcode.EcommerceShoppingApp.orders.service;
 
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.models.Cart;
+import com.sriramcode.EcommerceShoppingApp.ShoppingCartandCheckout.service.ICartService;
+import com.sriramcode.EcommerceShoppingApp.orders.models.Order;
+import com.sriramcode.EcommerceShoppingApp.orders.models.OrderItem;
+import com.sriramcode.EcommerceShoppingApp.orders.repository.OrderRepository;
+import com.sriramcode.EcommerceShoppingApp.products.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
