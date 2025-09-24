@@ -54,10 +54,10 @@ The platform includes essential features such as user authentication, products c
 ```markdown
 EcommerceShoppingApp
 ├── docs
-│   ├── api-docs
-│   ├── class-diagram
-│   ├── shema-diagram
-│   └── postman-collection
+│   ├── 
+│   ├── 
+│   ├── 
+│   └── 
 ├── src
 │   ├── main
 │   │   ├── java
@@ -131,58 +131,3 @@ EcommerceShoppingApp
 ## Conclusion
 This capstone project is a functional e-commerce system designed to demonstrate the usage of modern SDLC concepts, including the Spring MVC architecture, robust database schema, modularised services, and third-party payment gateway integration.
 The platform includes essential features such as user authentication, products catalog management,  Cart and Checkout functionality, Orders management, and payment processing using Stripe Payment Gateway.
-
-## Getting Started
-
-### Prerequisites
-- Java 11 or higher
-- Maven
-- Stripe account and API keys
-
-### Installation
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/onlineshop.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd onlineshop
-    ```
-3. Install the dependencies:
-    ```sh
-    mvn clean install
-    ```
-
-### Configuration
-1. Update the `application.properties` file with your database and Stripe API configurations:
-    ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/onlineshop
-    spring.datasource.username=root
-    spring.datasource.password=yourpassword
-    STRIPE_SECRET_KEY=your_stripe_secret_key
-    baseURL=http://localhost:8080/
-    ```
-
-### Running the Application
-1. Start the application:
-    ```sh
-    mvn spring-boot:run
-    ```
-2. Access the application at `http://localhost:8080`.
-
-## API Endpoints
-
-### User Management
-- `GET /api/users/{userId}/user` - Get user detail by userId
-- `POST /api/users/add` - Add a new user
-- `PUT /api/users/{userId}/update` - Update existing user details
-- `DELETE /api/users/{userId}/delete` - Remove a user
-- `POST /api/users/reset-password` - Reset users password
-
-### Shopping Cart and Checkout
-- `POST /api/v1/cartItems/item/add` - Add items to cart
-- `POST /api/v1/checkout/create-session` - Create a checkout session
-
-
-## License
-This project is licensed under the MIT License.
