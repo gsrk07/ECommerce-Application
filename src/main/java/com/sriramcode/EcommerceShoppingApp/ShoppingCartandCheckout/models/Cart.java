@@ -4,16 +4,16 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.sriramcode.EcommerceShoppingApp.commons.models.BaseModel;
 import com.sriramcode.EcommerceShoppingApp.user.models.User;
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-@Setter
-@Getter
+@Data
+@EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @Entity
 public class Cart extends BaseModel {
