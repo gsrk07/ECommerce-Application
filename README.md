@@ -46,47 +46,46 @@ This project is a fully functional e-commerce platform designed to showcase the 
 EcommerceShoppingApp
 ├── docs
 │   ├── api-docs
+│   ├── api-documentation   
 │   ├── class-diagram
-│   ├── shema-diagram
-│   └── postman-collection
+│   ├── postman-collection
+│   └── SchemaDesign
 ├── src
 │   ├── main
 │   │   ├── java
 │   │   │   └── com
-│   │   │       └── onlineshop
-│   │   │           ├── shop
-│   │   │           │   ├── common
-│   │   │           │   │   ├── dtos
-│   │   │           │   │   ├── exceptions
+│   │   │       └── sriramcode
+│   │   │           ├── EcommerceShoppingApp
+│   │   │           │   ├── authorisation
+│   │   │           │   │   ├── config
+│   │   │           │   │   ├── controller
+│   │   │           │   │   ├── dto
+│   │   │           │   │   ├── jwt
+│   │   │           │   │   ├── user
+│   │   │           │   ├── commons
+│   │   │           │   │   ├── dto
+│   │   │           │   │   ├── exception
 │   │   │           │   │   ├── models
-│   │   │           │   ├── config
+│   │   │           │   ├── configuration
 │   │   │           │   │   ├── GlobalConfig
 │   │   │           │   │   ├── WebConfig
 │   │   │           │   ├── data
 │   │   │           │   │   ├── DataInitializer
-│   │   │           │   │   ├── RoleRepository
-│   │   │           │   ├── cartAndCheckout
-│   │   │           │   │   ├── controllers
-│   │   │           │   │   ├── dtos
-│   │   │           │   │   ├── exceptions
-│   │   │           │   │   ├── models
-│   │   │           │   │   ├── repositories
-│   │   │           │   │   └── services
-│   │   │           │   ├── Auth
+│   │   │           │   ├── orders
 │   │   │           │   │   ├── – -
-│   │   │           │   ├── product
+│   │   │           │   ├── products
 │   │   │           │   │   ├── - -
-│   │   │           │   ├── order
+│   │   │           │   ├── ShoppingCartandCheckout
 │   │   │           │   │   ├── - -
 │   │   │           │   ├── user
 │   │   │           │   │   ├── - -
-│   │   │           └── Application.java
+│   │   │           └── EcommerceShoppingAppApplication.java
 │   │   └── resources
-│   │       ├── application.properties
+│   │       ├── static
 │   │       └── templates
-│   │           └── index.html
-└── README.md
+│   │       └── application.properties
 └── pom.xml
+└── README.md
 ```
 ## Key Highlights
 1. **Stripe Integration:** Implemented for secure and seamless payment processing.
